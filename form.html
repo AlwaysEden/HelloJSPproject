@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <form name = "form1" action = "form_ok.php" method = "post">
+    이름 : <input type = "text" name = "name">
+    <br><br>
+    나이:
+    <input type = "radio" id = "2025" name = "age" value = "20~25">
+    <label for = "2025">20~25살</label>
+    <input type = "radio" id = "2530" name = "age" value = "25~30">
+    <label for = "2530">25~30살</label>
+    <input  type = "radio" id = "3035" name = "age" value = "30~35">
+    <label for = "3035">30~35살</label>
+    <input type = "radio" id = "3540" name = "age" value = "35~40">
+    <label for = "3540">35~40살</label>
+
+    <br>
+    학년 :
+    <br>
+    <input type = "radio" id = "Freshman" name = "grade" value = "freshman">
+    <label for = "Freshman">Freshman</label>
+    <input type = "radio" id = "Sophomore" name = "grade" value = "sophomore">
+    <label for = "Sophomore">Sophomore</label>
+    <input  type = "radio" id = "Junior" name = "grade" value = "junior">
+    <label for = "Junior">Junior</label>
+    <input type = "radio" id = "Senior" name = "grade" value = "senior">
+    <label for = "Senior">Senior</label>
+
+    <br><br>
+
+    <label for="majors">전공:</label>
+    <select name="major" id="majors">
+      <option value="CS">컴퓨터공학</option>
+      <option value="EE">전자공학</option>
+      <option value="BS">생명과학</option>
+      <option value="ME">기계공학</option>
+      <option value="CE">전자제어공학</option>
+    </select>
+
+    <br><br>
+    최애과목 :
+    <br>
+
+    <input type="checkbox" id="course1" name="course" value="Computer architecture">
+    <label for="course1"> 컴퓨터 구조</label><br>
+    <input type="checkbox" id="course2" name="course" value="Algorithm">
+    <label for="course2"> 알고리듬</label><br>
+    <input type="checkbox" id="course3" name="course" value="Discrete mathematics">
+    <label for="course3"> 이산수학</label>
+    <input type="checkbox" id="course4" name="course" value="Practice project1">
+    <label for="course4"> 실전프로젝트</label>
+    <br>
+    <br>
+    <label for="dorm">기숙사:</label>
+    <select name="dorm" id="dorm">
+      <option value="은혜">은혜</option>
+      <option value="카이퍼">카이퍼</option>
+      <option value="로뎀">로뎀</option>
+      <option value="벧엘">벧엘</option>
+      <option value="창조">창조</option>
+      <option value="비전">비전</option>
+      <option value="갈대상자">갈대상자</option>
+    </select>
+
+
+    <br>
+    <br>
+    <label for="birthday">Your birthday :</label>
+    <input type="date" id="birthday" name="birthday"
+           value="2022-10-13"
+           min="1950-01-01" max="2022-12-31">
+    <br><br>
+    <label for="food">좋아하는 음식:</label>
+    <textarea id="food" name="food" rows="1" cols="10"></textarea>
+    <br>
+    <br>
+    <label for="hometown">고향:</label>
+    <textarea id="hometown" name="hometown" rows="1" cols="10"></textarea>
+    <br>
+    <label for="extra">기타사항:</label>
+    <textarea id="extra" name="extra" rows="4" cols="50"></textarea>
+    <br>
+
+    <input type = "submit" value = "저장">
+  </form>
+</body>
+</html>
